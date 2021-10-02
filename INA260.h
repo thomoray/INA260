@@ -1,5 +1,5 @@
-#ifndef H
-#define H
+#ifndef INA260_h
+#define INA260_h
 
 #include <stdint.h>
 
@@ -14,22 +14,22 @@
 #define INA260_DIE_ID_REGISTER          0xFF // Die ID and revision register
 
 typedef enum _address {
-    ADDREESS_0x40 = 0x40, // A1 = GND, A0 = GND
-    ADDREESS_0x41 = 0x41, // A1 = GND, A0 = VS
-    ADDREESS_0x42 = 0x42, // A1 = GND, A0 = SDA
-    ADDREESS_0x43 = 0x43, // A1 = GND, A0 = SCL
-    ADDREESS_0x44 = 0x44, // A1 = VS, A0 = GND
-    ADDREESS_0x45 = 0x45, // A1 = VS, A0 = VS
-    ADDREESS_0x46 = 0x46, // A1 = VS, A0 = SDA
-    ADDREESS_0x47 = 0x47, // A1 = VS, A0 = SCL
-    ADDREESS_0x48 = 0x48, // A1 = SDA, A0 = GND
-    ADDREESS_0x49 = 0x49, // A1 = SDA, A0 = VS
-    ADDREESS_0x4A = 0x4A, // A1 = SDA, A0 = SDA
-    ADDREESS_0x4B = 0x4B, // A1 = SDA, A0 = SCL
-    ADDREESS_0x4C = 0x4C, // A1 = SCL, A0 = GND
-    ADDREESS_0x4D = 0x4D, // A1 = SCL, A0 = VS
-    ADDREESS_0x4E = 0x4E, // A1 = SCL, A0 = SDA
-    ADDREESS_0x4F = 0x4F, // A1 = SCL, A0 = SCL
+    ADDRESS_0x40 = 0x40, // A1 = GND, A0 = GND
+    ADDRESS_0x41 = 0x41, // A1 = GND, A0 = VS
+    ADDRESS_0x42 = 0x42, // A1 = GND, A0 = SDA
+    ADDRESS_0x43 = 0x43, // A1 = GND, A0 = SCL
+    ADDRESS_0x44 = 0x44, // A1 = VS, A0 = GND
+    ADDRESS_0x45 = 0x45, // A1 = VS, A0 = VS
+    ADDRESS_0x46 = 0x46, // A1 = VS, A0 = SDA
+    ADDRESS_0x47 = 0x47, // A1 = VS, A0 = SCL
+    ADDRESS_0x48 = 0x48, // A1 = SDA, A0 = GND
+    ADDRESS_0x49 = 0x49, // A1 = SDA, A0 = VS
+    ADDRESS_0x4A = 0x4A, // A1 = SDA, A0 = SDA
+    ADDRESS_0x4B = 0x4B, // A1 = SDA, A0 = SCL
+    ADDRESS_0x4C = 0x4C, // A1 = SCL, A0 = GND
+    ADDRESS_0x4D = 0x4D, // A1 = SCL, A0 = VS
+    ADDRESS_0x4E = 0x4E, // A1 = SCL, A0 = SDA
+    ADDRESS_0x4F = 0x4F, // A1 = SCL, A0 = SCL
 } Address;
 
 typedef enum _mode {
